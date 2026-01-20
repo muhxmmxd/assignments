@@ -1,29 +1,43 @@
 #include <stdio.h>
 #include <string.h>
 int main()
-{   
-    for(int a=1;a<=5;a++)
+{
+    int a = 1;
+    while (a <= 5)
     {
-        for(int x=0;x<4;x++)
+        int x = 0;
+        while (x < 4)
+        {
             printf("  ");
+            x++;
+        }
 
-        for(int b=1;b<=a;b++)
-            printf("%d ",b);
+        int b = 1;
+        while (b <= a)
+        {
+            printf("%d ", b);
+            b++;
+        }
         printf("\n");
 
+        a++;
     }
-    
-    int i=1;
-    while(i<=5)
-    {   
 
+    int i = 1;
+    while (i <= 5)
+    {
 
-        for(int k=1;k<i;k++)
+        int k = 1;
+        while (k < i)
+        {
             printf("  ");
-        int j=5;
-        while(j>=i){
+            k++;
+        }
+        int j = 5;
+        while (j >= i)
+        {
 
-            printf("%d ",j);
+            printf("%d ", j);
             j--;
         }
         printf("\n");
